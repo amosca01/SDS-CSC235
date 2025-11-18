@@ -1,1 +1,0 @@
-These documents are just a few taken from our background investigation.
