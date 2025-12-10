@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Light Bulb</title>
+
+</head>
+<body>
+
+    <div id="landing">
+        <h1 class="important">Light bulb example</h1>
+        <!-- Based on example from: https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb -->
+        <p>JavaScript can change HTML attribute values.</p>
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button onclick="document.getElementById('myImage').src='bulbs/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="bulbs/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='bulbs/pic_bulboff.gif'">Turn off the light</button>
+    </div>
+    
+</body>
+</html>
+
