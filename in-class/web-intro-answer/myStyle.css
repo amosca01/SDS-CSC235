@@ -1,3 +1,33 @@
+
 body {
 	font-family: Arial;
+	font-size: 20px;
+}
+
+a {
+	background:gold;
+	color: blue;
+	font-weight: bold;
+}
+
+div {
+	padding: 10px;
+}
+
+ul {
+	list-style-type: circle; 
+}
+
+.center {
+	text-align: center;
+}
+
+.border {
+	border-style: solid;
+	border-radius: 5px;
+	border: 2px solid darkblue;
+}
+
+#thisClass {
+	background: palegreen;
 }

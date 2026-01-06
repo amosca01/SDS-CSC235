@@ -1,0 +1,21 @@
+
+body {
+	font-family: Arial;
+}
+
+p {
+	background: lightcyan;
+}
+
+.important {
+	font-weight: bold;
+	color: purple;
+}
+
+#landing {
+	text-align: center;
+}
+
+.highlight {
+	background: #ffffe0;
+}
