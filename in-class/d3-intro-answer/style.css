@@ -1,0 +1,19 @@
+
+body {
+	font-family: Arial;
+}
+
+.important {
+	font-weight: bold;
+	color: purple;
+}
+
+#landing {
+	text-align: center;
+}
+
+.selected {
+	fill: #DDF2D1;
+	stroke: #587759;
+}
+

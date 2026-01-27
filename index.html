@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SDS/CSC235</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+</head>
+
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue"><i class="fa fa-home w3-margin-right"></i>SDS/CSC235</a>
+  <a href="#office-hours" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Office Hours</a>
+  <a href="#schedule" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Schedule</a>
+  <a href="#overview" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Overview</a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Slides<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+     <!--  <a href="slides/01-intro.pdf" target="_blank" class="w3-bar-item w3-button">01-intro</a> -->
+    </div>
+  </div>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Homework<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <!-- <a href="hw/hw01.pdf" target="_blank" class="w3-bar-item w3-button">hw01</a> -->
+    </div>
+  </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">In-class<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <!-- <a href="in-class/Data Wrangling with Python.zip" target="_blank" class="w3-bar-item w3-button">Python data wrangling</a>-->
+    </div>
+  </div>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Projects<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <!--  <a href="proj/mid-semester-proj.pdf" target="_blank" class="w3-bar-item w3-button">Mid-semester Project (mp)</a>
+       <a href="proj/VitW-template.pptx" target="_blank" class="w3-bar-item w3-button">Mid-semester Project Template</a>
+       <a href="proj/final-proj.pdf" target="_blank" class="w3-bar-item w3-button">Final Project (fp)</a> -->
+    </div>
+  </div>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Links<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="https://moodle.smith.edu/" target="_blank" class="w3-bar-item w3-button">Moodle</a>
+      <a href="https://www.gradescope.com/" target="_blank" class="w3-bar-item w3-button">Gradescope</a>
+      <a href="https://csc-sds-235-01-202501.slack.com/" target="_blank" class="w3-bar-item w3-button">Slack</a>
+    </div>
+  </div>
+ </div>
+</div>
+
+<!-- Class info Container -->
+<div class="w3-container w3-padding-64 w3-center" id="office-hours">
+<h2 class="w3-left-align">Visual Analytics</h2>
+
+<div class="w3-row">
+
+  <div class="w3-third w3-margin-left">
+    <h4 class="w3-left-align">T/R 09:25-10:40</h4>
+    <h4 class="w3-left-align">T/R 13:20-14:35</h4>
+    <h4 class="w3-left-align">Ford 342</h4>
+  </div>
+  <div class="w3-half">
+  </div>
+</div>
+
+<!-- Office Hours Container -->
+<div class="w3-container w3-padding-64 w3-center" id="office-hours">
+<h2 class="w3-left-align">Instructors and Office Hours</h2>
+
+<div class="w3-row">
+
+<div class="w3-half">
+  <img src="img/ab.png" alt="Boss" style="width:45%" class="w3-circle">
+  <h4>Dr. Ab Mosca <span class="w3-opacity">(they/them)</span></h4>
+</div>
+
+<div class="w3-third w3-left-align">
+  <h4>Contact</h4>
+  <p>amosca@smith.edu</p>
+  <h4>Office Hours:</h4>
+  <h5>Bass Hall 105/7</h5>
+  <p>Monday 09:45 - 11:15</p>
+  <p>Friday 10:30 - 12:00</p>
+  <p>Or by appointment</p>
+  <p>You are welcome to come to office hours with questions about course content, data/computer science in general, research, jobs, or just to chat! All of these are perfectly appropriate uses of this time.</p>
+</div>
+
+</div>
+
+
+<!-- Schedule Container-->
+<div class="w3-container w3-padding-24 w3-center" id="schedule">
+<h2 class="w3-left-align">Course Schedule</h2>
+<p class="w3-left-align">(subject to change as needed)</p>
+<p class="w3-left-align w3-text-red">Assignments are due on Gradescope by 11:59pm on the day listed.</p>
+
+<div class="w3-content" style="width:90%">
+
+</div>
+</div>
+
+<!-- Overview Container -->
+<div class="w3-container w3-padding-24 w3-left-align" id="overview">
+<h2>Course Overview and Policies</h2>
+
+<h3>Description</h3>
+
+<p>Visual analytics is the science of combining interactive visual interfaces and information visualization techniques with automatic algorithms to support analytical reasoning through human-computer interaction. People use visual analytics tools and techniques to synthesize information and derive insight from massive, dynamic, ambiguous, and often conflicting data. This course will serve as an introduction to the science and technology of visual analytics and will include lectures on both theoretical foundations and application methodologies. The goals of this course are for students to (1) develop a comprehensive understanding of this emerging, multidisciplinary field, and (2) apply that understanding toward a focused research problem in a real-world application or a domain of personal interest.</p> 
+
+<h4>Learning Outcomes</h4>
+By the end of this course students will be able to:
+
+<ul> 
+  <li>Critically evaluate inteactive data visualizations and suggest improvements and refinements</li>
+  <li>Apply a structured design process to create effective visualization tools</li>
+  <li>Conceptualize ideas and interaction techniques using sketching and prototyping</li>
+  <li>Use principles of human perception and cognition in visualization design</li>
+  <li>Develop interactive, data-driven visualizations programmed in HTML5/JS</li>
+  <li>Work effectively as part of a cross-discplinary project team</li>
+</ul>
+
+<h4>Topics Covered</h4>
+The following topics will be covered in this class:
+
+<ul>
+  <li>Visualizing big data and algorithms</li>
+  <li>Interaction theory</li>
+  <li>Bespoke visualization coding with D3.js</li>
+  <li>User-centered design and evaluation</li>
+</ul>
+
+<h4>Topics <strong>Not</strong> Covered</h4>
+The following topics will not be covered in this class:
+
+<ul>
+  <li>In-depth visualization basics (take SDS/CSC 109 for this)</li>
+  <li>Mental models (take SDS/CSC 109 for this)</li>
+  <li>Introduction to coding (take CSC 110 or 120 for this)</li>
+  <li>Introduction to statistics (take SDS 210 for this)</li>
+  <li>Data wrangling (take SDS 192 for this)</li>
+  <li>ML/AI (take a CSC or SDS elective for this)</li>
+</ul>
+
+<h4>Prerequisites</h4>
+
+CSC 120 or equivalent.
+
+<strong>Students are expected to be intermediate-level coders</strong>, and to have experience with basic statistics and data wrangling. While not explicitly required, it is strongly recommended that students take CSC 210 and at least at least one other SDS class prior to CSC/SDS 235.  
+
+<h4>Time Management</h4>
+
+Smith college guidelines suggest 3 hours of work per credit per week. This is a 4 credit course, so you should expect to spend 12 hours on it per week:
+
+<ul>
+  <li>2.5 hours in class</li>
+  <li>1-2 hours preparing for class</li>
+  <li>7.5-8.5 hours on homework and outside study</li>
+</ul>
+
+Remember, the purpose of class time is to introduce and explore new topics. To complete assignments, you will often need to look up, learn, and practice material that extends beyond that covered during class meeting times.  
+
+<h3>Communication Expectations</h3>
+
+<p>All written communication regarding this course will take place via Slack (a cloud-based communcation platform that supports text, voice, and video). This includes:</p>
+
+<ul>
+  <li>announcements (in the #general channel)</li>
+  <li>questions about the material (in the #questions channel)</li>
+  <li>messages between individual students and the instructor</li>
+</ul>
+
+<p>Email is hard to search, response rate is slow, and messages are likely to get lost. Use Slack!</p>
+
+<p>Messages sent M-F between 9am and 5pm will get a response within 24hrs. Messages sent outside of this time frame will have a slower response rate.</p>
+
+<h3>Textbook</h3>
+
+<p>There is no required textbook for this course.</p>
+
+<p>If you would like textbooks to use as reference, here are some (imperfect) options:</p>
+<ul>
+   <li><em>Data Feminism (Catherine D'Ignazio and Lauren Klein), MIT Press, 2020</em></li>
+   <li><em>Visualization Analysis and Design (Tamara Munzner), CRC Press, 2014</em></li>
+   <li><em>Interactive Data Visualization for the Web, 2nd Edition (Scott Murray), O’Reilly, 2017</em></li>
+</ul>
+
+<p>If purchasing causes financial strain please come see me so that we can make alternative arrangements.</p>
+
+<h3>Assessment</h3>
+
+<p>All assignments will be submitted through Gradescope: <a href="https://www.gradescope.com" target="_blank">https://www.gradescope.com</a></p>
+<p>Entry code: 6XGKYK</p>
+
+<p>There are a variety of assignments in this class: Homeworks, Mid-Semester Project, Final Project, and Participation and Engagement. The purpose of this is provide as many ways as possible for students to demonstrate mastery of material.</p>
+
+<h4>Homeworks</h4>  
+
+<p>Homework is a chance to practice topics covered in lecture and receive feedback. See rubrics for grading guidelines. During the first half of the semester, the primary deliverables for this course will be weekly data challenges. A new dataset will be introduced during lecture, along with a set of guiding questions. Your task is to use what you know about data visualization and modeling to wrangle, explore, and ultimately report back your findings. Along the way, you'll document your analysis process, justify your visualization choices, and report any assumptions you make about the data.</p>
+
+<h4>Mid-Semester Project</h4>  
+
+<p>The mid-semester project is a chance for students to work together and engage with an existing visual analytic tool. Student will work in groups to prepare a short (~5min) case study of an existing visual analytics system: who built it, who it was designed for, how specific design choices shape the way the system works (or doesn't), and proposed changes or extensions for the tool.</p>  
+
+<h4>Final Project</h4>
+
+<p>Final projects present the opportunity for students to work with real scientists to create a visual analytics tool that will assist with their research. Alternatively, students may apply the visualization techniques covered in class to a topic of interest to them. This assignment will be completed in groups. Grading will look at technical details, theoretical foundations, and creativity.</p>
+
+<h4>Participation and Engagement</h4>
+
+<p>Participation and engagement will take into account contributions in class which demonstrate intellectual curiosity or clear understanding of a topic, comments which help others in class to learn a difficult concept, timeliness and proactive communication about class attendance, and lab submissions.</p>
+
+<h3>Late Policy</h3>
+<p>All assignments are due as listed on the <a href="#schedule">Course Schedule</a>. Because our lives and learning do not always go as planned, every student will be able grant themselves extensions on homework assignments according to the instructions below.</p>
+
+<p>Remember, we develop skills through constant practice. This course features weekly assignments, which build from one week to the next, and each assignment is designed to take a full week of work. Delaying the completion of an assignment will put you at a disadvantage going into the next one. Nevertheless, sometimes a little flexibility makes a huge difference, so students are empowered to give themselves extensions when it would aid their ability to master the material. Only extensions which precisely adhere to the guidelines below will be considered valid. Late assignments without a valid extension will receive no credit.</p>
+
+<h4>Extension Guidelines</h4>
+<p>Extensions must be requested before the work is due, and they will not be given retroactively. When working with a group, students submit a collective extension request. Work turned in under an extension will receive the lowest priority for grading, and in some cases may not be returned until the end of the semester.</p>
+
+<h4>Requesting an Extension</h4>
+<p>Prior to the original deadline for the assignment, submit a file called extension.txt (or .pdf) on Gradescope that contains the following:</p>
+
+<ul>
+  <li>Your name (and group members' names)</li>
+  <li>Assignment number and original due date</li>
+  <li>Duration of extension and new due date</li>
+  <li>Review of any prior extension requests</li>
+</ul>
+
+<p>For example:</p>
+<pre class="code">
+  Ab Mosca and Jordan Crouser
+  HW09 originally due 10/01/24
+  2 day extension, now due 10/03/2024
+  Previous extentions: HW02 (1 day), HW7 (2 days)
+</pre>
+
+<p>Be sure that you do not submit any other files with your extension request. You can bring your code in progress to office or TA hours if you need. Do not turn in work that you do not want to be graded.</p>
+
+<p>Once you’ve finished, and before your new deadline expires, submit all your files for the assignment as usual.</p>
+
+<h4>Changing an Extension</h4>
+<p>If you submit an extension.txt before the deadline and then decide you do not need it, just turn your code as usual and include an extension.txt file without any text. If you realize that you need even more time, you may grant yourself an additional extension following the same procedure again. However, repeated resets are unlikely to enhance your learning, so be mindful about how much time you add to your clock!</p>
+
+
+<h3>Revise and Resubmit</h3>
+<p>In order to improve your learning and reduce grade anxiety, you may revise and resubmit homework assignments in this class. The rules for revising and resubmitting assignments are as follows:</p>
+
+<ul>
+  <li>You may not resubmit an assignment on which you received a 0.</li>
+  <li>Your resubmission must include a changelog explaining or showing what changed from the first submission.</li>
+  <li>Revise and resubmits are unlimited.</li>
+  <li>The highest grade will prevail (even if it was not the most recent submission).</li>
+</ul>
+
+<strong>Resubmissions missing a changelog or tracked changes will not be graded</strong>. 
+
+<h3>Final Grades</h3>
+<p>Your grade will be a weighted average of all assignments, as shown below.</p> 
+
+<div class="w3-row">
+  <div class="w3-third">
+    <h5>Assignment Weights</h5>
+    <img src="assets/grades.png" style="max-width: 550px;">
+  </div>
+</div>
+
+<p>We will round decimals to the nearest whole number and assign letter grades as follows:</p>
+
+<div class="w3-row">
+  <div class="w3-half"><img src="assets/number_grades.png" style="width: 100%; max-width:550px;"></div>      
+</div>
+
+
+<h3>Classroom Conduct</h3>
+
+<p>All students and teaching staff are expected to treat each other with kindness and consideration. Equity and inclusivity are priorities in this class, and centering those systematically marginalized in higher ed and STEM will be a priority. If you have any requests or feedback, please reach out to Ab.</p>
+
+<h3>Academic Integrity</h3>
+
+<p>Students are strongly encouraged to form study groups and to collaborate on assignments. The following information is required for all submitted work:</p>
+  <ul>
+    <li>The names of all collaborating students be listed at the top of the submission. If you worked alone, please state: "I did not collaborate with anyone on this assignment."</li>
+    <li>A "References" section, with in-line citations to any resources you used. Citations should include page numbers (if a printed resource) or a direct URL (if an online resource). If you did not use any resources in completing the assignment, please state: "I did not utilize any external resources in completing this assignment."</li>
+  </ul></p>
+
+<p>You may consult online resources as part of your coursework, but you may not directly copy thoughts or code from online sources.</p>
+
+<p>Generative AI may not be used to perform the intellectual tasks required to complete an assignment. In other words, your writing and code must be your own, not generated by AI (this includes modifying code or text initially generated by ChatGPT - doing so is a violation of academic integrity for this course).</p>
+
+<p>You may use generative AI to help debug your code or as a spell check, provided you submit a PDF of your entire chat transcript with your assignment. Absence of said PDF transcript is a violation of academic integrity for this course.</p>
+
+<p>For example, this is an appropriate use of generative AI for this class:</p>
+<div class="w3-row">
+  <div class="w3-half"><img src="assets/good-gpt.png" style="width: 100%; max-width:550px;"></div>      
+</div>
+
+<p>And this is an inappropriate use of generative AI for this class:</p>
+<div class="w3-row">
+  <div class="w3-half"><img src="assets/bad-gpt.png" style="width: 100%; max-width:550px;"></div>      
+</div>
+
+<p>If you have a question about what is considered a violation of this policy, please ask!</p>
+<p>You can find the colleges's academic integrity policy here: <a href="https://www.smith.edu/about-smith/offices/student-affairs/student-handbook/academic-honor-code-0" target="_blank">https://www.smith.edu/about-smith/offices/student-affairs/student-handbook/academic-honor-code-0</a>.</p> 
+
+<h3>Accessibility and Accomodations</h3>
+<p>Students with disabilities who wish to receive academic services and/or accommodations should contact the <a href="https://www.smith.edu/your-campus/offices-services/accessibility-resource-center/request-accommodations" target="_blank">Acessibility Resource Center (ARC)</a>. The ARC database should automatically generate and send an accomodation letter to all of your instructors.</p>
+
+<h3>Comfy Class Policy</h3>
+<p>Everyone is welcome to make themselves comfortable in our classroom and asked to be respectful of one another. When you are communicating, please practice active listening by focusing on understanding what others are expressing rather than thinking of how you will respond. Additionally, keep in mind that our wide array of individual backgrounds shape our unique perspectives, so please respect one another when we have sincere differences of opinion.</p>
+
+<p>You may bring beverages or snacks, but please use closed containers to avoid spills and keep messy foods away from computers. Everyone is free to use concentration accommodations like fidget toys, knitting, doodling, moving around, or sitting on the floor; just be mindful your focus does not disrupt others. Parents and caregivers may bring their babies and children to class whenever necessary. Learners of all stages are invited to join us.</p>
+
+
+<h3>A note to all students</h3>
+<p>I (Ab) am here to support you. If at any point in the semester you realize there is something I could do to better support you, please reach out. This can be something as small as letting me know I am not making the font big enough on my presentations, to sharing that you need some help getting caught up after a hard day or week.</p>
+<p>Please be respectful of your classmates and instructor's wellbeing. <b class="w3-text-red">You should not come to class if you are not feeling well.</b> This includes COVID symptoms, and symptoms of non-COVID illnesses. If you need to miss class, I will work with you to stay caught up.</p> 
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-metro-dark-blue w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+
+<script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
