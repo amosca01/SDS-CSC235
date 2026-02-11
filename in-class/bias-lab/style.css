@@ -12,8 +12,9 @@ body {
 	text-align: center;
 }
 
-.selected {
-	stroke: #red;
+.highlight {
+	 stroke: #ff0000; 
+  	 stroke-width: 2px;
 }
 
 

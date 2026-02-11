@@ -45,7 +45,7 @@ function update(data) {
     let yAxis1 = d3.axisLeft(yScale1); 
     let yAxis2 = d3.axisLeft(yScale2); 
 
-    // Add axes to vis 
+    // Add axes  
     // scatter 1
     frame1.append('g')
             .attr('transform', 'translate(0,' + (visHeight) + ')')
@@ -87,6 +87,38 @@ function update(data) {
                             .domain(data.map(d => d['Island']))
                             .range(['#66c2a5','#fc8d62','#8da0cb']); 
 
+    // set up a brush for brushing and linking 
+    brush = d3.brush()
+                .extent([ // define what can be brushed 
+                    [d3.min(xScale1.range()), d3.min(yScale1.range())],
+                    [d3.max(xScale1.range()), d3.max(yScale1.range())]
+                ])
+                .on("brush end", (e) => { // event handler 
+                    if (e.selection === null) {
+                        circles = d3.selectAll('circle'); 
+                        circles = circles["_groups"][0]; 
+                        circles.forEach(c => { c.classList.remove('highlight'); })
+                    } else {
+                        const [[xMin, yMin], [xMax, yMax]] = e.selection; 
+                        data.map((d, i) => {
+                            
+                            selector = "._" + i;
+                            sel =  d3.selectAll(selector); 
+                            circles = sel["_groups"][0] // for each data in selection, find circles
+                        
+                            if (xMin <= xScale1(d[x1]) && xMax >= xScale1(d[x1]) &&
+                                yMin <= yScale1(d[y1]) && yMax >= yScale1(d[y1])) {
+                                circles.forEach(c => { c.classList.add('highlight'); }) // if circle is in selection, highlight
+                            } else {
+                                circles.forEach(c => { c.classList.remove('highlight'); })
+                            }
+                        })
+                    }
+                }); 
+
+    frame1.append("g")
+        .call(brush); 
+
     // add points
     let dot1 = frame1.append('g')
             .selectAll("dot")
@@ -102,8 +134,8 @@ function update(data) {
             .attr("r", 2)
             .style("fill", function (d) { 
                 return speciesScale(d['Island']) 
-            }); 
-
+            })
+            .attr("class", (d, i) => {return "_" + i}); 
 
     let dot2 = frame2.append('g')
             .selectAll("dot")
@@ -119,22 +151,8 @@ function update(data) {
             .attr("r", 2)
             .style("fill", function (d) { 
                 return speciesScale(d['Island']) 
-            }); 
-
-    // brushing
-    frame1.call(d3.brush().on("start brush end", function(e) {
-        if (e.selection) {
- 
-            let [[x0, y0], [x1, y1]] = e.selection;
-            dot1['_groups'][0].forEach(function(currDot) {
-                // todo 
-                console.log(d3.select(currDot).attr('cx')); 
             })
-            
-        } else {
-        //     dot1.style("stroke", "steelblue");
-        }
-    })) 
+            .attr("class", (d, i) => {return "_" + i});  
 }
 
 // request data 
